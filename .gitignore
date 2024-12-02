@@ -1,0 +1,6 @@
+*.o
+ls
+touch
+mkdir
+unlink
+rmdir
