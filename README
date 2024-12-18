@@ -1,7 +1,12 @@
 x86-utils - file utils in x86 assembly
 ======================================
 Implementation of some common file utils
-in x86 assembly for educational purposes.
+in x86_64 assembly for educational purposes and not meant for practical usage.
+
+Dependencies
+------------
+nasm assembler
+ld linker
 
 Building
 --------
