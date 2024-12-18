@@ -10,10 +10,10 @@ all: ${BIN}
 include Sourcedeps
 
 ${BIN}:
-	${CC} -o $@ $< -nostdlib -static
+	ld -o $@ $<
 
 .s.o:
-	${AS} -o $@ $<
+	nasm -felf64 -o $@ $<
 
 clean:
 	rm -f ${BIN} src/*.o
