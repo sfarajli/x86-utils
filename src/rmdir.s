@@ -1,7 +1,12 @@
-.global _start
-.intel_syntax noprefix
+global _start
 
 _start:
-	mov rax, 60
+	mov rdi,[rsp+8+8] 	; get argv[1]
+	; rmdir sys-call
+	mov rax, 84	
+	syscall
+
+exit:
 	mov rdi, 0
-	syscall 
+	mov rax, 60 
+	syscall
