@@ -3,7 +3,7 @@
 .SUFFIXES:
 .SUFFIXES: .o .s
 
-BIN = ls touch mkdir unlink rmdir
+BIN = touch mkdir unlink rmdir
 
 all: ${BIN}
 
