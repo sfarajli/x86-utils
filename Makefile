@@ -1,9 +1,9 @@
-.POSIX: 
+.POSIX:
 
 .SUFFIXES:
 .SUFFIXES: .o .s
 
-BIN = touch mkdir unlink rmdir
+BIN = mkdir unlink rmdir
 
 all: ${BIN}
 

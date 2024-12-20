@@ -1,6 +1,5 @@
 ls (synopsis: ls) (lists only the current directory)
 ------- Only one operand and no argument
-touch (synopsis: touch file)
 mkdir (synopsis: mkdir dir)
 unlink (synopsis: unlink file)
 rmdir (synopsis: rmdir dir)

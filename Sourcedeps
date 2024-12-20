@@ -1,5 +1,4 @@
 ls: src/ls.o
-touch: src/touch.o
 mkdir: src/mkdir.o
 unlink: src/unlink.o
 rmdir: src/rmdir.o
