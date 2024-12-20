@@ -4,6 +4,7 @@ section .data
 
 section .text
 global _start
+	; TODO: check return value of mkdir sys-call
 
 _start:
 	pop rax			; store argc in rax
@@ -11,7 +12,9 @@ _start:
 	jne .exit_failure
 
 .mkdir:
-	mov rdi,[rsp+8] 	; get argv[1]
+	pop rax
+	; mov rdi,[rsp+8] 	; get argv[1]
+	pop rdi
 	mov rax, 83		; mkdir sys-call
 	mov rsi, 511 		; set mode for directory (511 corresponds to 0777 in octal)
 	syscall
