@@ -12,9 +12,7 @@ _start:
 	jne .exit_failure
 
 .mkdir:
-	pop rax
-	; mov rdi,[rsp+8] 	; get argv[1]
-	pop rdi
+	mov rdi,[rsp+8] 	; get argv[1]
 	mov rax, 83		; mkdir sys-call
 	mov rsi, 511 		; set mode for directory (511 corresponds to 0777 in octal)
 	syscall
