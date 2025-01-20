@@ -1,7 +1,7 @@
 x86-utils - file utils in x86 assembly
 ======================================
-Implementation of some common file utils
-in x86_64 assembly for educational purposes and not meant for practical usage.
+Implementation of some common file utils in x86_64 assembly,
+written for educational purposes, not for practical usage.
 
 Dependencies
 ------------
